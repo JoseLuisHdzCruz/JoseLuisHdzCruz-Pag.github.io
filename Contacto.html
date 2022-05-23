@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h2>José Luis Hernández De La Cruz</h2>
+            <style>
+                header{
+                background-color: #69cccc;
+                padding: 10px;
+            }
+
+            footer{
+                background-color: #69cccc;
+                padding: 10px;
+            }
+            </style>
+        </header>
+        <section>
+            <a href="./index.html">Regresar</a>
+        </section>   
+        <section>
+            <h3>Ingresa tus datos!!</h3>
+            <form action="./index.html" method="get">
+                <label for="nombre">Nombre : </label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" 
+                minlength="3" 
+                maxlength="50" 
+                required><br>
+                <label for="nombre">Apellidos : </label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="ingresa tu apellido"><br>
+                <label for="nombre">Telefono : </label>
+                <input type="tel" name="telefono" id="telefono" placeholder="ingresa tu telefono"
+                pattern="[0-9]{10,13}"
+                title="Numero incorrecto"
+                maxlength="16"
+                minlength="10"><br>
+                <label for="fecha">Fecha : </label>
+                <input type="date" name="fecha" id="fecha"><br>
+                <label for="nombre">Edad : </label>
+                <input type="number" name="edad" id="edad" placeholder="edad" min="18" step="3"><br>
+                <label for="nombre">Sexo : </label>
+                <input type="radio" name="Sexo">Masculino
+                <input type="radio" name="Sexo">Femenino<br>
+                <label for="nombre">Grupo : </label>
+                <select name="grupos" id="grupos">
+                    <option value="1">Grupo A</option>
+                    <option value="2">Grupo B</option>
+                    <option value="3">Grupo C</option>
+                    <option value="4">Grupo D</option>
+                </select>
+                <input type="submit" value="ok"><br>
+                <label for="mensaje" id="mensaje" >Escribe tu mensaje</label>
+                <input type="text" id="mensaje" placeholder="Escribe tu mensaje" size="70px">
+                <input type="submit" value="Enviar"><br>
+            </form>
+        </section> 
+        <footer>
+            <h4>20211032 - Jose Luis Hernández De La Cruz - 3°A</h4>
+        </footer>
+    </body>
+</html>
+
+ 
